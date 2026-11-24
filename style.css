@@ -1,0 +1,663 @@
+:root {
+    --crema: #FFF8F3;
+    --rosa-pastel: #F8E1E7;
+    --rosa-antiguo: #C77D91;
+    --dorado: #C5A36B;
+    --cafe: #70534B;
+    --fuente-cursiva: 'Great Vibes', cursive;
+    --fuente-titulos: 'Cormorant Garamond', serif;
+    --fuente-textos: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    color: var(--cafe);
+    text-align: center;
+    background-color: var(--rosa-pastel);
+    background-image: url("assets/decoraciones/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portada {
+    background-color: var(--rosa-pastel);
+    padding: 100px 20px 40px;
+    background-image: url("assets/decoraciones/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portada .introduccion {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 320px;
+}
+
+.portada h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 42px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    font-family: var(--fuente-cursiva);
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--rosa-antiguo);
+    margin-top: 20px;
+}
+
+.apellidos {
+    font-family: var(--fuente-titulos);
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.marco-foto {
+    width: 80%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border: 6px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.marco-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-foto {
+    position: relative;
+    width: 90%;
+    max-width: 380px;
+    margin: 30px auto;
+}
+
+.encaje {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.cruz {
+    width: 110px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.osito {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.portada {
+    position: relative;
+    overflow: hidden;
+}
+
+.flores {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.izquierda {
+    left: 0;
+}
+
+.derecha {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.encaje-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nubes {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: -90px auto 0;
+    pointer-events: none;
+}
+
+.musica {
+    background-color: var(--crema);
+    padding: 30px 20px;
+}
+
+#boton-musica {
+    width: 65px;
+    height: 65px;
+    border: 2px solid var(--rosa-antiguo);
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--rosa-antiguo);
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#boton-musica:hover {
+    background-color: var(--rosa-antiguo);
+    color: white;
+}
+
+#texto-musica {
+    font-family: var(--fuente-titulos);
+    font-size: 18px;
+    margin-top: 12px;
+    color: var(--rosa-antiguo);
+}
+.oracion {
+    background-color: var(--crema);
+    padding: 30px 35px 50px;
+}
+
+.oracion img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.oracion p {
+    font-family: var(--fuente-titulos);
+    font-size: 23px;
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.oracion span {
+    display: block;
+    font-family: var(--fuente-cursiva);
+    font-size: 40px;
+    color: var(--rosa-antiguo);
+    margin-top: 20px;
+}
+
+.familia {
+    background-color: #E4B1BA;
+    padding: 50px 20px;
+}
+
+.tarjeta-familiar {
+    background-color: white;
+    width: 90%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 45px 40px;
+    border-radius: 200px 200px 0 0;
+    position: relative;
+}
+
+.foto-familiar {
+    width: 100%;
+    aspect-ratio: 4 / 4.5;
+    object-fit: cover;
+    border-radius: 180px 180px 0 0;
+}
+
+.tarjeta-familiar h2 {
+    font-family: var(--fuente-cursiva);
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--dorado);
+    margin: 15px 0;
+}
+
+.tarjeta-familiar p,
+.tarjeta-familiar span {
+    font-family: var(--fuente-titulos);
+    font-size: 23px;
+    color: var(--dorado);
+}
+
+.marco-familiar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.adorno-floral {
+    display: block;
+    width: 110px;
+    height: auto;
+    margin: 25px auto 0;
+}
+
+.padrinos {
+    background-color: var(--rosa-pastel);
+    background-image: url("assets/decoraciones/fondo.png");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 25px;
+}
+
+.cinta-padrinos h2 {
+    font-family: var(--fuente-cursiva);
+    font-size: 42px;
+    font-weight: 400;
+    color: #943E50;
+}
+
+.contenedor-padrinos {
+    position: relative;
+    width: 90%;
+    max-width: 380px;
+    margin: 25px auto;
+}
+
+.foto-padrinos {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px #00000015;
+}
+
+.flor-padrinos {
+    position: absolute;
+    width: 90px;
+    pointer-events: none;
+}
+
+.flor-padrinos.superior {
+    top: -15px;
+    left: -15px;
+}
+
+.flor-padrinos.inferior {
+    bottom: -15px;
+    right: -15px;
+    transform: rotate(180deg);
+}
+
+.padrinos p,
+.padrinos span {
+    font-family: var(--fuente-titulos);
+    font-size: 25px;
+    color: var(--cafe);
+}
+
+.fecha {
+    background-color: var(--rosa-pastel);
+    background-image: url("assets/decoraciones/fondo.png");
+    background-size: cover;
+    padding: 20px 15px 40px;
+}
+
+.contenedor-fecha {
+    position: relative;
+    max-width: 380px;
+    margin: 25px auto 0;
+}
+
+.dia-semana {
+    font-family: var(--fuente-cursiva);
+    font-size: 48px;
+    color: #943E50;
+    line-height: 1;
+}
+
+.numero-dia {
+    font-family: var(--fuente-titulos);
+    font-size: 120px;
+    line-height: 1;
+    color: #943E50;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+
+.flor-fecha {
+    position: absolute;
+    width: 95px;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.flor-fecha.izquierda {
+    left: 30px;
+    transform: scaleY(-1) rotate(-35deg);
+}
+
+.flor-fecha.derecha {
+    right: 30px;
+    transform: rotate(145deg);
+}
+
+.cinta-fecha {
+    background-image: url("assets/decoraciones/cinta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85%;
+    max-width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cinta-fecha p {
+    font-family: var(--fuente-titulos);
+    font-size: 28px;
+    color: #943E50;
+}
+
+.cuenta-regresiva {
+    margin-top: 30px;
+}
+
+.cuenta-regresiva h2 {
+    font-family: var(--fuente-cursiva);
+    font-size: 38px;
+    font-weight: 400;
+    color: #943E50;
+    margin-bottom: 20px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.tiempo {
+    flex: 1;
+    background-color: var(--crema);
+    border-radius: 12px;
+    padding: 12px 4px;
+}
+
+.tiempo span {
+    font-family: var(--fuente-titulos);
+    font-size: 36px;
+    color: #943E50;
+}
+
+.tiempo p {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.eventos {
+    background-color: var(--rosa-pastel);
+    background-image: url("assets/decoraciones/fondo.png");
+    background-size: cover;
+    padding: 50px 20px;
+}
+
+.tarjeta-evento {
+    position: relative;
+    width: 95%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 50px 25px 30px;
+    border: 6px double #EAB8C0;
+    border-radius: 30px;
+    background-color: rgba(255, 248, 243, 0.5);
+}
+
+.tarjeta-evento h2 {
+    font-family: var(--fuente-cursiva);
+    font-size: 60px;
+    font-weight: 400;
+    color: #943E50;
+    margin-bottom: 15px;
+}
+
+.lugar-evento {
+    font-family: var(--fuente-titulos);
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.direccion-evento {
+    font-family: var(--fuente-titulos);
+    font-size: 23px;
+}
+
+.hora-evento {
+    font-family: var(--fuente-titulos);
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.boton-ubicacion {
+    display: inline-block;
+    background-color: #D77D8D;
+    color: white;
+    font-family: var(--fuente-titulos);
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+}
+
+.boton-ubicacion:hover {
+    background-color: #B85C70;
+}
+
+.sello-evento {
+    position: absolute;
+    width: 90px;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flor-evento {
+    position: absolute;
+    width: 85px;
+    pointer-events: none;
+}
+
+.flor-evento.superior-izquierda {
+    top: -15px;
+    left: -15px;
+}
+
+.flor-evento.superior-derecha {
+    top: -15px;
+    right: -15px;
+    transform: scaleX(-1);
+}
+
+.flor-evento.inferior-izquierda {
+    bottom: -15px;
+    left: -15px;
+    transform: scaleY(-1);
+    width: 65px;
+}
+
+.flor-evento.inferior-derecha {
+    bottom: -15px;
+    right: -15px;
+    transform: rotate(180deg);
+    width: 65px;
+}
+
+.confirmacion {
+    padding: 30px 25px 50px;
+}
+
+.confirmacion h2 {
+    font-family: var(--fuente-cursiva);
+    font-size: 45px;
+    font-weight: 400;
+    color: #943E50;
+    margin: 25px 0 15px;
+}
+
+.confirmacion p {
+    font-family: var(--fuente-titulos);
+    font-size: 24px;
+    max-width: 350px;
+    margin: 0 auto 25px;
+}
+
+.confirmacion .despedida-confirmacion {
+    font-style: italic;
+    margin-top: 25px;
+    color: #943E50;
+}
+
+.galeria {
+    padding: 20px 15px 40px;
+    overflow: hidden;
+}
+
+.cinta-galeria {
+    background-image: url("assets/decoraciones/cinta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 340px;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cinta-galeria h2 {
+    font-family: var(--fuente-cursiva);
+    font-size: 50px;
+    font-weight: 400;
+    color: #943E50;
+}
+
+.contenedor-galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+.polaroid {
+    width: 33%;
+    background-color: var(--crema);
+    padding: 6px 6px 18px;
+    box-shadow: 0 5px 10px rgba(112, 83, 75, 0.2);
+}
+
+.polaroid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.polaroid:nth-child(1) {
+    transform: rotate(-12deg);
+}
+
+.polaroid:nth-child(2) {
+    position: relative;
+    z-index: 2;
+}
+
+.polaroid:nth-child(3) {
+    transform: rotate(12deg);
+}
+
+.despedida {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 25px 0;
+}
+
+.cruz-final {
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+.despedida p {
+    font-family: var(--fuente-titulos);
+    font-size: 32px;
+    font-style: italic;
+    color: #943E50;
+    max-width: 350px;
+    margin: 0 auto 25px;
+    line-height: 1.2;
+}
+
+.flor-final {
+    position: absolute;
+    width: 150px;
+    bottom: 30px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.flor-final.izquierda {
+    left: -20px;
+    transform: scaleY(-1);
+}
+
+.flor-final.derecha {
+    right: -20px;
+    transform: rotate(180deg);
+}
+
+.nubes-final {
+    display: block;
+    width: calc(100% + 50px);
+    margin: 50px -25px 0;
+    pointer-events: none;
+}
+
+.portada,
+.musica,
+.oracion,
+.familia,
+.padrinos,
+.fecha,
+.eventos {
+    background: transparent;
+}
